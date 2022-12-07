@@ -1,5 +1,7 @@
 # House pricing in the UK
-Implementation on a Neural Network to predict how much a house will sell for using UK government’s land registry data which contains all registered purchases since 1995. The solution, together with some comments, can be found in `notebook.ipynb` in a notebook format.
+Implementation on a Neural Network to predict how much a house will sell for using UK government’s land registry data which contains all registered purchases since 1995. You can find and download the data at:
+https://bit.ly/2MzkQYW
+The solution, together with some comments, can be found in `house_pricing_notebook.ipynb` in a notebook format.
 
 Data were shuffled on my local system through an external library written in C++ (https://github.com/alexandres/terashuf): all the files needed are attached in the folder `terashuf` (the only dependency should be `stdlib`).
 The shuffling was performed in order to avoid the introduction of bias in the training of the model: data is more or less ordered by date in the original csv and this could introduce some bias.
